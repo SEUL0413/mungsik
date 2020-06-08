@@ -1,0 +1,64 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mungsik"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml
+10    //블루투스를 쓰기위해 블루투스 퍼미션 추가
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:5:5-68
+11-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:6:5-74
+12-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:6:22-71
+13
+14    <application
+14-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:8:5-26:19
+15        android:allowBackup="true"
+15-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.0.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
+17        android:debuggable="true"
+18        android:icon="@drawable/mungsik"
+18-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:10:9-41
+19        android:label="mungsik"
+19-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:11:9-32
+20        android:supportsRtl="true"
+20-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:12:9-35
+21        android:theme="@style/AppTheme" >
+21-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:13:9-40
+22        <activity android:name="com.example.mungsik.AlarmAddActivity" />
+22-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:14:9-63
+22-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:14:19-51
+23        <activity android:name="com.example.mungsik.AlarmActivity" />
+23-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:15:9-51
+23-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:15:19-48
+24        <activity android:name="com.example.mungsik.BluetoothActivity" />
+24-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:16:9-55
+24-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:16:19-52
+25        <activity android:name="com.example.mungsik.MainActivity" >
+25-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:17:9-23:20
+25-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:17:19-47
+26            <intent-filter>
+26-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:18:13-22:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:19:17-69
+27-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:19:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:21:17-77
+29-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:21:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <receiver android:name="com.example.mungsik.AlarmReceiver" />
+33-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:25:9-51
+33-->E:\AndroidProject\mungsik\app\src\main\AndroidManifest.xml:25:19-48
+34    </application>
+35
+36</manifest>
